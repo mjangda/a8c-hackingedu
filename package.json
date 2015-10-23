@@ -1,0 +1,10 @@
+{
+  "name": "Presentation",
+  "description": "Slides and stuff.",
+  "dependencies": {
+    "reveal-md": "0.0.18"
+  },
+  "scripts": {
+    "start": "reveal-md 0-api-demo.md --theme=night"
+  }
+}
