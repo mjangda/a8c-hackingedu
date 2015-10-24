@@ -239,6 +239,8 @@ TODO screenshot
 
 ![](https://cldup.com/zXr_CAgLDB.png)
 
+---
+
 ### Create an App on Simperium.com
 
 ![](https://cldup.com/xS9Lx_xXrR.png)
