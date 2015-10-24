@@ -70,13 +70,14 @@ var wpcom = WPCOM();
 // 5 posts on "en.blog.wordpress.com"
 wpcom
 	.site('en.blog.wordpress.com')
-	.postsList({ number: 5 }, function(err, data) {
-		if (err) throw err;
+	.postsList({ number: 5})
+	.then( data => {
 		console.log('the newest 5 blog post titles are:\n');
-		data.posts.forEach(function(post, i) {
-			console.log('  %d: "%s"', i+1, post.title);
-		});
-	});
+		data.posts.forEach( (post, i) => {
+			console.log( '  %d: "%s"', i + 1, post.title ) );
+		} );
+	} )
+	.catch( err => { throw err; } );
 ```
 
 ---
