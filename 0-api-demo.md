@@ -1,24 +1,13 @@
-# APIs by Automattic
+# Automattic APIs
 
 ---
 
 ## What is Automattic?
 
-A bunch of cool cats making the web a better place.
+A bunch of cool cats democratizing publishing.
 
-<img src=images/cool-cats.jpg />
-
----
-
-<img src=images/a8c.gif />
-
-Note:
-~300 of us in Park City in 2014
-~400 of us now
-
----
-
-<img src=images/a8c-services.png />
+TODO: team photo or screenshot
+TODO: list of services
 
 ---
 
@@ -26,7 +15,7 @@ Note:
 
 Hosted blogging / CMS platform
 
-<img src=images/wordpresscom.png />
+TODO screenshot
 
 Note:
 Hosted blogging and site-building platform; built on WordPress with added BBQ sauce 
@@ -102,7 +91,7 @@ TODO: screenshot of Calypso
 
 ## Postbot
 
-<img src=images/postbot.png />
+TODO: screenshot of Postbot
 
 ---
 
@@ -237,7 +226,73 @@ TODO screenshot
 
 ---
 
-TODO: Simperium
+## Simperium
+
+- Like a DropBox for JSON
+- Dead-simple for developers
+- Failure-first philosophy
+- Hosted, separate, offline, traversible data store
+
+---
+
+### Create an App on Simperium.com
+
+![](https://cldup.com/zXr_CAgLDB.png)
+
+### Create an App on Simperium.com
+
+![](https://cldup.com/xS9Lx_xXrR.png)
+
+---
+
+### Use one of many language bindings
+
+```js
+
+<html>
+    <head>
+        <script type="text/javascript" src="https://js.simperium.com/v0.1/"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            var app_id = 'hyphens-angles-449';
+            var token = '28a80fd4f7084176b3fb535202fe3127';
+
+            var simperium = new Simperium(app_id, { token: token });
+
+            var bucket = simperium.bucket('blammo');
+
+            bucket.on('ready', function() {
+                console.log("bucket connected and ready!");
+            });
+
+            bucket.on('local', function(id) {
+                if (id === 'whammo') {
+                    return {
+                        'stuff' : $('#content').val()
+                    };
+                }
+            });
+
+            bucket.on('notify', function(id, data) {
+                if (id == 'whammo') {
+                    $('#content').val(data['stuff']);
+                }
+            });
+
+            $('document').ready(function() {
+                $('#content').on('change keyup paste', function() {
+                    bucket.update('whammo');
+                });
+                bucket.start();
+            });
+
+        </script>
+    </head>
+    <body>
+        <textarea id="content">HI</textarea>
+    </body>
+</html>
+```
 
 ---
 
