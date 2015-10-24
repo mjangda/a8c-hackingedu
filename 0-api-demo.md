@@ -257,13 +257,13 @@ Once completed, you now have access to the file plus any generated thumbnails.
 
 ### Create an App on Simperium.com
 
-![](https://cldup.com/zXr_CAgLDB.png)
+![](images/Simplenote - Create an App.png)
 
 ---
 
 ### Create an App on Simperium.com
 
-![](https://cldup.com/xS9Lx_xXrR.png)
+![](images/Simplenote - App Dashboard.png)
 
 ---
 
