@@ -314,7 +314,9 @@ $('document').ready(function() {
 
 ### Build cool things
 
-<video src="https://player.vimeo.com/video/41820958"></video>
+<video height="480" width="640" controls>
+    <source src="https://08-lvl3-pdl.vimeocdn.com/01/3364/1/41820958/97318986.mp4?expires=1445660929&token=0c336700ed6035fea23d8" type="video/mp4">
+</video>
 
 ---
 
