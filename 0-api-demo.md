@@ -298,6 +298,12 @@ TODO screenshot
 
 ---
 
+### Build cool things
+
+![](https://player.vimeo.com/video/41820958)
+
+---
+
 ### HackingEDU Ideas
 
 - Real-time quiz platform
