@@ -300,7 +300,7 @@ TODO screenshot
 
 ### Build cool things
 
-![](https://player.vimeo.com/video/41820958)
+<video src="https://player.vimeo.com/video/41820958"></video>
 
 ---
 
