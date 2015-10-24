@@ -1,13 +1,24 @@
-# Automattic APIs
+# APIs by Automattic
 
 ---
 
 ## What is Automattic?
 
-A bunch of cool cats democratizing publishing.
+A bunch of cool cats making the web a better place.
 
-TODO: team photo or screenshot
-TODO: list of services
+<img src=images/cool-cats.jpg />
+
+---
+
+<img src=images/a8c.gif />
+
+Note:
+~300 of us in Park City in 2014
+~400 of us now
+
+---
+
+<img src=images/a8c-services.png />
 
 ---
 
@@ -15,7 +26,7 @@ TODO: list of services
 
 Hosted blogging / CMS platform
 
-TODO screenshot
+<img src=images/wordpresscom.png />
 
 Note:
 Hosted blogging and site-building platform; built on WordPress with added BBQ sauce 
@@ -91,7 +102,7 @@ TODO: screenshot of Calypso
 
 ## Postbot
 
-TODO: screenshot of Postbot
+<img src=images/postbot.png />
 
 ---
 
