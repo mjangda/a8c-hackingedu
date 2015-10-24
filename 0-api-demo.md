@@ -114,7 +114,7 @@ Not technically built on the API, but something like this is possible.
 
 Instant, secure sharing
 
-TODO: screenshot
+<img src=images/cloudup.png />
 
 Note:
 Cloudup lets you instantly and securely share anything -- videos, photos, music, links, and docs -- without waiting for uploads or downloads.
@@ -123,7 +123,11 @@ Cloudup lets you instantly and securely share anything -- videos, photos, music,
 
 ## API
 
-Basically do anything a user can on cloudup.com: create/manage streams, upload files, get embeds
+Basically do anything a user can on cloudup.com:
+
+- create/manage streams
+- upload files
+- get embeds
 
 ---
 
@@ -151,7 +155,11 @@ A stream is basically a collection of objects
 POST /items/url -d 'url=cloudup.com&stream_id=cc3pGD6avN7'
 ```
 
-TODO what does this do?
+Scrapes and formats content from any URL
+
+---
+
+<img src=images/cloudup-url.png />
 
 ---
 
@@ -207,15 +215,13 @@ Once completed, you now have access to the file plus any generated thumbnails.
 
 ---
 
-## cloudup.com
+### Mesh
 
-TODO screenshot
+<img src=images/mesh.png />
 
 ---
 
-## Mesh
-
-TODO screenshot
+### Demo
 
 ---
 
