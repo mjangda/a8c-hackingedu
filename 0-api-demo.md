@@ -247,53 +247,48 @@ TODO screenshot
 
 ---
 
-### Use one of many language bindings
+### Use one of many bindings
 
-```js
+- iOS / OSX
+- Android
+- JavaScript
+- Python
+- Ruby
+- Plain HTTP
 
-<html>
-    <head>
-        <script type="text/javascript" src="https://js.simperium.com/v0.1/"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script>
-            var app_id = 'hyphens-angles-449';
-            var token = '28a80fd4f7084176b3fb535202fe3127';
+---
 
-            var simperium = new Simperium(app_id, { token: token });
+### Use one of many bindings
 
-            var bucket = simperium.bucket('blammo');
+```
+var simperium = new Simperium(app_id, { token: token });
 
-            bucket.on('ready', function() {
-                console.log("bucket connected and ready!");
-            });
+var bucket = simperium.bucket('blammo');
 
-            bucket.on('local', function(id) {
-                if (id === 'whammo') {
-                    return {
-                        'stuff' : $('#content').val()
-                    };
-                }
-            });
+bucket.on('ready', function() {
+    console.log("bucket connected and ready!");
+});
 
-            bucket.on('notify', function(id, data) {
-                if (id == 'whammo') {
-                    $('#content').val(data['stuff']);
-                }
-            });
+bucket.on('local', function(id) {
+    if (id === 'whammo') {
+        return {
+            'stuff' : $('#content').val()
+        };
+    }
+});
 
-            $('document').ready(function() {
-                $('#content').on('change keyup paste', function() {
-                    bucket.update('whammo');
-                });
-                bucket.start();
-            });
+bucket.on('notify', function(id, data) {
+    if (id == 'whammo') {
+        $('#content').val(data['stuff']);
+    }
+});
 
-        </script>
-    </head>
-    <body>
-        <textarea id="content">HI</textarea>
-    </body>
-</html>
+$('document').ready(function() {
+    $('#content').on('change keyup paste', function() {
+        bucket.update('whammo');
+    });
+    bucket.start();
+});
 ```
 
 ---
